@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={cn(inter.className)}>{children}</body>
+        <body className={cn(inter.className, 'bg-blue-2')}>{children}</body>
       </html>
     </ClerkProvider>
   )
