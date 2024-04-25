@@ -1,4 +1,5 @@
 import {HomeFullWidgetTime} from '@/components/fragment/HomeFullWidgetTime'
+import {HomeWidgetList} from '@/components/list/HomeWidgetList'
 import Image from 'next/image'
 import React, {FC, memo} from 'react'
 
@@ -6,6 +7,7 @@ const HomePage = () => {
   return (
     <main>
       <FullWidget />
+      <HomeWidgetList />
     </main>
   )
 }
