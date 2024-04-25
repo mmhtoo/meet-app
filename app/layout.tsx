@@ -9,6 +9,9 @@ const inter = Inter({subsets: ['latin']})
 export const metadata: Metadata = {
   title: 'Meet',
   description: 'A web app for Video Calls.',
+  icons: {
+    icon: ['/images/logo.png'],
+  },
 }
 
 export default function RootLayout({
@@ -17,7 +20,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      appearance={{
+        variables: {
+          colorPrimary: '#161925',
+        },
+      }}>
       <html lang="en">
         <body className={cn(inter.className, 'bg-blue-2')}>{children}</body>
       </html>
