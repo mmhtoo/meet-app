@@ -8,7 +8,7 @@ export default function DashboardLayout(props: PropsWithChildren) {
       <DashboardSidebar />
       <div className="w-[85%] h-full max-h-full ">
         <DashboardHeader />
-        <main className="w-[100%] h-[90%] max-h-[90%] p-5">
+        <main className="w-[100%] h-[90%] max-h-[90%] p-10">
           {props.children}
         </main>
       </div>
